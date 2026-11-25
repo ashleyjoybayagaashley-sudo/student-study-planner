@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyBloom | Student Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h2>🌷 StudyBloom</h2>
+
+        <nav>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#planner">My Planner</a>
+            <a href="#subjects">Subjects</a>
+            <a href="#schedule">Schedule</a>
+        </nav>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- HEADER -->
+        <header id="dashboard">
+    <h1>Welcome to StudyBloom! ✨</h1>
+    <p>Let's make today count.</p>
+        </header>
+
+        <!-- DASHBOARD -->
+        <section id="dashboard" class="dashboard">
+            <h2>Dashboard</h2>
+
+<div class="progress-section">
+    <h3>My Study Progress 🌱</h3>
+
+    <div class="progress-bar">
+        <div id="progressFill"></div>
+    </div>
+
+    <p id="progressMessage">Keep going! You can do it.</p>
+</div>
+
+
+            <div class="stats-container">
+
+                <div class="stat-card">
+                    <h3>Total Tasks</h3>
+                    <p id="totalTasks">0</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Completed</h3>
+                    <p id="completedTasks">0</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Pending</h3>
+                    <p id="pendingTasks">0</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Progress</h3>
+                    <p id="progressPercent">0%</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- STUDY PLANNER -->
+        <section id="planner" class="planner">
+            <h2>My Study Planner 📚</h2>
+
+            <form id="taskForm">
+
+                <input type="text" id="taskTitle"
+                    placeholder="Enter your study goal" required>
+
+                <input type="text" id="taskSubject"
+                    placeholder="Enter subject" required>
+
+                <input type="date" id="taskDate" required>
+
+                <button type="submit">+ Add Study Task</button>
+
+            </form>
+
+            <div id="taskList">
+                <!-- Study tasks will appear here -->
+            </div>
+        </section>
+
+        <!-- SUBJECTS -->
+        
+<section id="subjects" class="subjects">
+    <h2>My Subjects 📖</h2>
+    <p>Manage your school subjects below.</p>
+
+    <form id="subjectForm">
+        <input
+            type="text"
+            id="subjectName"
+            placeholder="Enter subject name"
+            required
+        >
+
+        <button type="submit">+ Add Subject</button>
+    </form>
+
+    <div id="subjectList">
+        <!-- Subjects will appear here -->
+    </div>
+</section>
+
+
+        <!-- SCHEDULE -->
+        
+<section id="schedule" class="schedule">
+    <h2>My Schedule 🗓️</h2>
+    <p>Plan your daily study activities.</p>
+
+    <form id="scheduleForm">
+        <input
+            type="text"
+            id="activityName"
+            placeholder="Enter activity"
+            required
+        >
+
+        <input
+            type="time"
+            id="activityTime"
+            required
+        >
+
+        <input
+            type="date"
+            id="activityDate"
+            required
+        >
+
+        <button type="submit">+ Add Schedule</button>
+    </form>
+
+    <div id="scheduleList">
+        <!-- Schedule activities will appear here -->
+    </div>
+</section>
+
+
+        <!-- FOOTER -->
+        <footer>
+            <p>StudyBloom © 2026 | Plan. Learn. Grow. ♡</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
