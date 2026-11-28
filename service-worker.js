@@ -1,5 +1,5 @@
 
-const CACHE_NAME = "study-planner-v2";
+const CACHE_NAME = "study-planner-v3";
 
 const FILES_TO_CACHE = [
     "./",
