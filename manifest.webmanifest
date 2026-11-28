@@ -1,7 +1,7 @@
 
 {
-  "name": "StudyBloom - Student Study Planner",
-  "short_name": "StudyBloom",
+  "name": "Student Study Planner",
+  "short_name": "Stud Planner",
   "description": "Organize your study goals, subjects, and schedules.",
   "start_url": "./",
   "scope": "./",
